@@ -1,0 +1,21 @@
+
+body{
+    margin-top: 300px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    color: #003366;
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+hr{
+
+    margin-left: 500px;
+    margin-right: 500px;
+
+}
+h1{
+    color: #098ddf;
+}

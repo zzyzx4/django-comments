@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "shop/styles.css" %}">
+<link rel="stylesheet" type="text/css">
+{% block title %}Список Продуктов{% endblock title %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static "/shop/styles.css" %}">
+{#    <link rel="stylesheet" type="text/css">#}
+{#    <img src='{% static "img/1.jpg" %}'/>#}
+
+<p>{% for product in products %}</p>
+    <h1><a href="{% url 'product' pk=product.id %}">{{ product.title }}</a></h1><hr><br>
+    <p>{{ product.description|safe }}</p><hr>
+    <p>Цена : {{ product.price }} Тенге</p>
+    <p>Категория : {{ product.category }}</p><br><br><br><br>
+    {% endfor %}
+{% endblock content%}
